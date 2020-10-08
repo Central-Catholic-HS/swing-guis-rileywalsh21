@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+public class EssayBot
+{
+    public static void main (String[] args)
+    {
+        String course;
+        String grade;
+        Double actualGrade;
+        String subject;
+        
+        course = JOptionPane.showInputDialog("What class do you have to write an essay for?");
+        grade = JOptionPane.showInputDialog("What is your current grade in that class?");
+        actualGrade = Double.parseDouble(grade);
+        subject = JOptionPane.showInputDialog("What is the subject?");
+        
+        JOptionPane.showMessageDialog(null, "Only have a " + grade + " in " + course + "? Click here for free essays written about " + subject + "!");
+        System.exit(0);
+    }
+}
